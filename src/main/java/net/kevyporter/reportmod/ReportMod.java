@@ -53,7 +53,7 @@ public class ReportMod extends CommandBase {
 
     public void processCommand(ICommandSender sender, String[] args) {
         try {
-            if (Minecraft.getMinecraft().func_147104_D().serverIP.endsWith("hypixel.net")) {
+            if (Minecraft.getMinecraft().func_147104_D().serverIP.toLowerCase(Locale.ENGLISH).contains("hypixel.net")) {
                 if (args.length >= 2) {
                     StringBuilder builder = new StringBuilder();
                     for(int i = 1; i < args.length; i++) {
